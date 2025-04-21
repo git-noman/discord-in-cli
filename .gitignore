@@ -1,3 +1,4 @@
 src/events/__pycache__
+src/store/feed.json
 venv
 .env
