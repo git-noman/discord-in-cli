@@ -1,4 +1,4 @@
 __pycache__
-src/store/feed.json
+message_pool.json
 venv
 .env
