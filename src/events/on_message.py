@@ -1,7 +1,7 @@
 import discord
 from utils.tools import Tools
 
-def setup(client):
+def setup(client, config):
     @client.event
     async def on_message(message: discord.Message) -> None:
         # Convert message to a dict

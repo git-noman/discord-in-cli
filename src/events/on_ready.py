@@ -10,7 +10,7 @@ console_handler.setFormatter(logging.Formatter(
 ))
 logger.addHandler(console_handler)
 
-def setup(client):
+def setup(client, config):
     @client.event
     async def on_ready():
         logger.info(f"Logged in as {client.user.name} ({client.user.id})")
