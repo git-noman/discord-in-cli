@@ -16,3 +16,7 @@ def setup(client, config):
         Tools.feed(msg_dict)
 
         # All messages are fed to the message pool on arrival, after which they can be used by the rest of the program
+
+        # Stream if config.stream = true
+        if config['stream']:
+            print(f"{message.author.display_name} -> {message.guild.name} | {message.content}")
