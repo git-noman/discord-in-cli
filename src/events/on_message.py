@@ -1,5 +1,6 @@
 import discord
 from utils.tools import Tools
+from utils.color import Colors
 
 def setup(client, config):
     @client.event
@@ -19,4 +20,6 @@ def setup(client, config):
 
         # Stream if config.stream = true
         if config['stream']:
-            print(f"{message.author.display_name} -> {message.guild.name} | {message.content}")
+            print(f"""
+{Colors.BLUE}{Colors.UNDERLINE}{message.author.display_name}{Colors.RESET} -> {Colors.BLUE}{Colors.UNDERLINE}{message.guild.name}{Colors.RESET} |
+{message.content} """)
